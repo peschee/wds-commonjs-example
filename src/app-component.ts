@@ -1,5 +1,6 @@
 import { customElement, html, LitElement } from 'lit-element';
-import './components/apex-chart/apex-chart';
+// import './components/apex-chart/apex-chart';
+import moment from 'moment';
 
 const options = {
     series: [{
@@ -84,7 +85,9 @@ const options = {
 @customElement("app-component")
 export class AppComponent extends LitElement {
     protected render(): unknown {
+        const now = moment();
         return html`
-            <apex-chart .options="${options}"></apex-chart>`
+            <apex-chart .options="${options}"></apex-chart>
+        ${now}`
     }
 }
