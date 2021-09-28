@@ -6,9 +6,6 @@ export class ApexChart extends LitElement {
     @property({attribute: false})
     options = {};
 
-    @property({attribute: false})
-    series: ApexAxisChartSeries = [];
-
     private chart: ApexCharts | undefined = undefined;
 
     createRenderRoot(): Element {
@@ -45,10 +42,6 @@ export class ApexChart extends LitElement {
     protected updated(changedProperties: Map<PropertyKey, unknown>): void {
         if (changedProperties.has('options') && this.chart) {
             this.chart.updateOptions(this.options);
-        }
-
-        if (changedProperties.has('series') && this.chart) {
-            this.chart.updateSeries(this.series);
         }
     }
 }
