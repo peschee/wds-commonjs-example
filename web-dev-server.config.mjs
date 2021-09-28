@@ -1,5 +1,5 @@
-import {fromRollup} from '@web/dev-server-rollup';
-import {esbuildPlugin} from '@web/dev-server-esbuild';
+import { fromRollup } from '@web/dev-server-rollup';
+import { esbuildPlugin } from '@web/dev-server-esbuild';
 
 import _commonjs from '@rollup/plugin-commonjs';
 

@@ -17,6 +17,7 @@
     "typescript": "^4.4.3"
   },
   "dependencies": {
+    "apexcharts": "^3.28.3",
     "lit-element": "^2.5.1"
   }
 }
