@@ -11,7 +11,7 @@ export default {
     },
     appIndex: 'index.html',
     plugins: [
-        esbuildPlugin({ts: true, target: 'esnext'}),
+        esbuildPlugin({ ts: true, target: 'esnext' }),
         commonjs(),
     ],
 };
